@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<msq xmlns="http://www.msefi.com/:msq">
+<bibliography author="TunerStudio MS(Beta) 1.19 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: Project close - &lt;br&gt;&#10;  &lt;head&gt;&#10;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;    &#10;  &lt;/body&gt;&#10;&lt;/html&gt;&#10;" writeDate="Thu Dec 22 22:40:44 EST 2011"/>
+<versionInfo fileFormat="4.0" firmwareInfo="" nPages="14" signature="MS3 Format 0229.002"/>
+<page number="0" size="1024"/>
+<page number="1" size="1024"/>
+<page number="2" size="1024"/>
+<page number="3" size="1024"/>
+<page number="4" size="1024"/>
+<page number="5" size="1024"/>
+<page number="6" size="1024"/>
+<page number="7" size="1024"/>
+<page number="8" size="1024"/>
+<page number="9" size="1024"/>
+<page number="10" size="1024"/>
+<page number="11" size="1024"/>
+<page number="12" size="1024"/>
+<page number="13" size="1024"/>
+<settings Comment="These setting are only used if this msq is opened without a project.">
+<setting name="USE_CRC_DATA_CHECK_OFF" value="USE_CRC_DATA_CHECK_OFF"/>
+<setting name="MPH" value="MPH"/>
+<setting name="EXPANDED_CLT_TEMP_OFF" value="EXPANDED_CLT_TEMP_OFF"/>
+<setting name="PW_4X_OFF" value="PW_4X_OFF"/>
+<setting name="CYL_12_16_SUPPORT_OFF" value="CYL_12_16_SUPPORT_OFF"/>
+<setting name="CAN_COMMANDS_OFF" value="CAN_COMMANDS_OFF"/>
+<setting name="FAHRENHEIT" value="FAHRENHEIT"/>
+<setting name="INTERNAL_LOG_FIELDS_OFF" value="INTERNAL_LOG_FIELDS_OFF"/>
+<setting name="METRES" value="METRES"/>
+<setting name="DEFAULT" value="DEFAULT"/>
+</settings>
+<userComments Comment="These are user comments that can be related to a particular setting or dialog."/>
+</msq>
