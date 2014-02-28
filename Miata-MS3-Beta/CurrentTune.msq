@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS(Beta) 2.0.3c - EFI Analytics, Inc." tuneComment="    &lt;br&gt;    &lt;br&gt;    &lt;br&gt;  " writeDate="Tue Jul 10 22:13:35 EDT 2012"/>
+<bibliography author="TunerStudio MS(Beta) 2.0.5 - EFI Analytics, Inc." tuneComment="    &lt;br&gt;    &lt;br&gt;    &lt;br&gt;  " writeDate="Tue Jul 10 22:24:51 EDT 2012"/>
 <versionInfo fileFormat="4.0" firmwareInfo="" nPages="14" signature="MS3 Format 0238.000"/>
 <page number="0" size="1024">
 <constant digits="3" name="N2O2PWLo" units="ms">1.998</constant>
