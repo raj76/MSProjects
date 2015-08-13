@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS 2.6.14 - EFI Analytics, Inc." tuneComment="" writeDate="Tue Jun 02 23:40:41 EDT 2015"/>
+<bibliography author="TunerStudio MS 2.6.14 - EFI Analytics, Inc." tuneComment="" writeDate="Tue Jun 09 23:07:37 EDT 2015"/>
 <versionInfo fileFormat="4.0" firmwareInfo="" nPages="18" signature="MS3 Format 0435.16 "/>
 <page>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
@@ -145,7 +145,7 @@
 <constant digits="0" name="rpmLF">50.0</constant>
 <constant digits="0" name="mapLF">50.0</constant>
 <constant digits="0" name="tpsLF">45.0</constant>
-<constant digits="0" name="egoLF">60.0</constant>
+<constant digits="0" name="egoLF">100.0</constant>
 <constant digits="0" name="adcLF">50.0</constant>
 <constant name="knk_pin_out">"Tacho"</constant>
 <constant digits="0" name="mafLF">50.0</constant>
@@ -163,16 +163,16 @@
 <constant name="RevLimOption_fuelcut">"Off"</constant>
 <constant digits="0" name="RevLimMaxRtd" units="deg">12.0</constant>
 <constant digits="0" name="ego_startdelay" units="s">30.0</constant>
-<constant name="can_poll2_ego">"Disable"</constant>
+<constant name="can_poll2_ego">"Enable"</constant>
 <constant name="can_poll2_gps">"Off"</constant>
 <constant name="opt142_rtc">"Off"</constant>
 <constant name="opt142_gs_share">"Off"</constant>
 <constant digits="1" name="injPwmT2" units="ms">1.040384</constant>
 <constant digits="0" name="injPwmPd2" units="us">66.0</constant>
 <constant digits="0" name="injPwmP2" units="%">75.0</constant>
-<constant digits="0" name="can_ego_id">5.0</constant>
-<constant digits="0" name="can_ego_table">7.0</constant>
-<constant digits="0" name="can_ego_offset" units="bytes">153.0</constant>
+<constant digits="0" name="can_ego_id">9.0</constant>
+<constant digits="0" name="can_ego_table">0.0</constant>
+<constant digits="0" name="can_ego_offset" units="bytes">0.0</constant>
 <constant digits="1" name="baro_upper" units="kPa">105.0</constant>
 <constant digits="1" name="baro_lower" units="kPa">80.0</constant>
 <constant digits="1" name="baro_default" units="kPa">100.0</constant>
@@ -305,7 +305,7 @@
 <constant digits="0" name="pwmidlecranktaper" units="s">5.0</constant>
 <constant digits="1" name="knk_step_adv" units="deg">1.1</constant>
 <constant digits="0" name="fc_rpm" units="rpm">1500.0</constant>
-<constant digits="1" name="fc_kpa" units="kPa">15.0</constant>
+<constant digits="1" name="fc_kpa" units="kPa">17.6</constant>
 <constant digits="1" name="fc_tps" units="%">0.4</constant>
 <constant digits="1" name="fc_clt" units="°F">160.0</constant>
 <constant digits="1" name="fc_delay" units="s">1.5</constant>
@@ -399,7 +399,7 @@
 <constant digits="1" name="pwmidle_dp_adder" units="%">5.096</constant>
 <constant digits="0" name="pwmidle_dp_adder_steps" units="steps">13.0</constant>
 <constant digits="0" name="pwmidle_rpmdot_threshold" units="rpm/sec">80.0</constant>
-<constant digits="1" name="pwmidle_decelload_threshold" units="%">14.0</constant>
+<constant digits="1" name="pwmidle_decelload_threshold" units="%">28.0</constant>
 <constant digits="1" name="pwmidle_Kp_new" units="%">100.0</constant>
 <constant digits="1" name="pwmidle_Ki_new" units="%">100.0</constant>
 <constant digits="1" name="pwmidle_Kd_new" units="%">0.0</constant>
@@ -841,7 +841,7 @@
 <constant name="feature7_maftrim">"Off"</constant>
 <constant name="feature7_mafcalib">"Off"</constant>
 <constant name="feature7_aeevents">"Time"</constant>
-<constant name="feature7_aetpswot">"On"</constant>
+<constant name="feature7_aetpswot">"Off"</constant>
 <constant name="feature7_batchcrank">"On"</constant>
 <constant name="feature7_cranktaper">"Off"</constant>
 <constant name="feature7_crtpunits">"Time"</constant>
@@ -980,7 +980,7 @@
 <constant digits="0" name="u08_debug38">0.0</constant>
 <constant name="u08_debug38_0">"Normal"</constant>
 <constant name="u08_debug38_1">"Off"</constant>
-<constant name="egoport1">"Normal EGO"</constant>
+<constant name="egoport1">"CAN EGO"</constant>
 <constant name="egoport2">"Off"</constant>
 <constant name="egoport3">"Off"</constant>
 <constant name="egoport4">"Off"</constant>
@@ -1132,7 +1132,7 @@
          2.0 
          4.0 
       </constant>
-<constant digits="1" name="accel_CLT_multiplier" units="%">100.0</constant>
+<constant digits="1" name="accel_CLT_multiplier" units="%">110.0</constant>
 <constant cols="1" digits="0" name="cl_idle_timing_target_deltas" rows="8" units="rpm">
          -400.0 
          -300.0 
@@ -1729,15 +1729,15 @@
       </constant>
 <constant cols="1" digits="0" name="aseCntTable" rows="10" units="cycles">
          350.0 
-         330.0 
-         310.0 
-         290.0 
-         270.0 
-         250.0 
-         230.0 
+         345.0 
+         337.0 
+         324.0 
+         306.0 
+         285.0 
+         256.0 
+         234.0 
          210.0 
-         193.0 
-         174.0 
+         200.0 
       </constant>
 <constant cols="1" digits="1" name="matTemps" rows="6" units="°F">
          160.0 
@@ -3160,11 +3160,11 @@
          56.4 54.4 51.6 49.7 52.9 56.2 56.1 55.5 56.2 66.6 70.2 76.1 91.0 89.0 87.0 85.0 
          52.9 56.0 53.9 52.7 54.0 57.1 58.4 56.6 57.0 66.8 73.4 92.8 101.0 99.0 97.0 95.0 
          58.3 60.1 57.4 56.7 54.9 59.2 59.3 57.7 60.0 71.1 74.0 86.1 106.8 104.5 102.8 101.0 
-         59.0 65.7 58.0 53.5 54.5 60.4 61.3 59.8 63.3 72.4 73.6 77.2 104.7 91.5 99.7 102.0 
-         73.7 72.6 69.9 58.4 55.5 61.3 63.5 63.2 64.6 72.0 76.6 84.1 92.4 91.7 103.1 100.4 
-         51.3 85.1 68.5 60.1 59.8 66.3 68.9 66.4 65.9 76.0 77.0 76.4 86.8 112.7 111.5 105.4 
-         71.2 91.1 70.7 60.4 62.0 68.6 68.7 68.1 69.8 76.5 76.7 76.3 83.8 119.0 116.5 110.5 
-         78.0 88.0 71.0 66.0 65.0 71.0 71.0 68.0 68.0 75.0 77.0 80.0 94.0 120.0 117.0 111.0 
+         59.0 61.0 58.0 53.5 54.5 60.4 61.3 59.8 63.3 72.4 73.6 77.2 104.7 91.5 99.7 102.0 
+         65.0 65.2 61.6 58.4 55.5 61.3 63.5 63.2 64.6 72.0 76.6 84.1 92.4 91.7 103.1 100.4 
+         67.2 68.0 63.5 60.1 59.8 66.3 68.9 66.4 65.9 76.0 77.0 76.4 86.8 112.7 111.5 105.4 
+         68.7 69.1 65.4 60.4 62.0 68.6 68.7 68.1 69.8 76.5 76.7 76.3 83.8 119.0 116.5 110.5 
+         69.2 69.8 66.3 66.0 65.0 71.0 71.0 68.0 68.0 75.0 77.0 80.0 94.0 120.0 117.0 111.0 
       </constant>
 <constant cols="16" digits="1" name="veTable2" rows="16" units="%">
          26.0 26.0 29.0 34.0 40.0 46.0 50.0 55.0 58.0 61.0 61.0 60.0 59.0 59.0 58.0 58.0 
