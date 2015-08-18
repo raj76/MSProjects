@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS 2.6.14 - EFI Analytics, Inc." tuneComment="" writeDate="Wed Aug 12 22:31:39 EDT 2015"/>
+<bibliography author="TunerStudio MS 2.6.14 - EFI Analytics, Inc." tuneComment="" writeDate="Tue Aug 18 00:04:26 EDT 2015"/>
 <versionInfo fileFormat="4.0" firmwareInfo="" nPages="19" signature="MS3 Format 0523.15 "/>
 <page>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
@@ -39,13 +39,13 @@
          0.0 
       </pcVariable>
 <pcVariable cols="1" digits="0" name="wueAnalRecommend" rows="10" units="%">
-         185.0 
-         169.0 
-         145.0 
-         130.0 
-         121.0 
-         111.0 
-         100.0 
+         132.0 
+         127.0 
+         122.0 
+         117.0 
+         112.0 
+         107.0 
+         102.0 
          100.0 
          100.0 
          100.0 
@@ -199,11 +199,11 @@
 <constant digits="2" name="aeTaperTime" units="s">0.1</constant>
 <constant digits="0" name="tpsasync2_events" units="events">10.0</constant>
 <constant digits="0" name="aeEndPW" units="%ReqFuel">20.0</constant>
-<constant name="egoAlgorithm">"PID"</constant>
+<constant name="egoAlgorithm">"No correction"</constant>
 <constant name="egoAlgorithm_auth">"Off"</constant>
 <constant name="egoAlgorithm_delay_table">"Use IGN events"</constant>
-<constant digits="0" name="egoKP" units="%">50.0</constant>
-<constant digits="0" name="egoKI" units="%">20.0</constant>
+<constant digits="0" name="egoKP" units="%">40.0</constant>
+<constant digits="0" name="egoKI" units="%">0.0</constant>
 <constant digits="0" name="egoKD" units="%">0.0</constant>
 <constant digits="0" name="ac_idleup_vss_offpoint" units="MPH">39.81682</constant>
 <constant digits="0" name="ac_idleup_vss_hyst" units="MPH">4.92118</constant>
@@ -240,7 +240,7 @@
 <constant digits="1" name="knk_tadv" units="s">1.0</constant>
 <constant digits="1" name="knk_dtble_adv" units="deg">0.2</constant>
 <constant digits="0" name="knk_ndet" units="knocks">2.0</constant>
-<constant name="EAEOption">"X-tau with CLT correction"</constant>
+<constant name="EAEOption">"Off"</constant>
 <constant name="knkport">"JS5 (ADC6)"</constant>
 <constant digits="1" name="knk_maxmap" units="kPa">101.0</constant>
 <constant digits="0" name="knk_lorpm" units="rpm">700.0</constant>
@@ -1079,8 +1079,8 @@
 <constant digits="0" name="u08_debug134">0.0</constant>
 <constant name="AE_options">"Accel-pump AE"</constant>
 <constant digits="1" name="accel_blend_percent" units="%">51.1</constant>
-<constant digits="0" name="accel_tpsdot_threshold" units="%/sec">10.0</constant>
-<constant digits="0" name="accel_mapdot_threshold" units="kpa/sec">100.0</constant>
+<constant digits="0" name="accel_tpsdot_threshold" units="%/sec">1000.0</constant>
+<constant digits="0" name="accel_mapdot_threshold" units="kpa/sec">1010.0</constant>
 <constant digits="0" name="ae_lorpm2" units="rpm">6001.0</constant>
 <constant digits="0" name="ae_hirpm2" units="rpm">6001.0</constant>
 <constant digits="1" name="accel_blend_percent2" units="%">100.0</constant>
@@ -2534,13 +2534,13 @@
          11.0 11.0 11.0 11.0 11.0 11.0 11.0 11.0 11.0 11.0 11.0 11.0 
       </constant>
 <constant cols="1" digits="0" name="wueBins" rows="10" units="%">
-         185.0 
-         169.0 
-         145.0 
-         130.0 
-         121.0 
-         111.0 
-         100.0 
+         132.0 
+         127.0 
+         122.0 
+         117.0 
+         112.0 
+         107.0 
+         102.0 
          100.0 
          100.0 
          100.0 
@@ -3105,22 +3105,22 @@
 </page>
 <page number="6" size="1024">
 <constant cols="16" digits="1" name="veTable1" rows="16" units="%">
-         20.5 23.3 29.0 34.5 29.5 31.3 29.8 31.7 34.3 35.9 38.8 45.3 53.6 55.5 54.5 54.5 
-         24.0 26.8 32.5 38.0 33.0 34.8 33.3 35.2 37.8 39.4 42.3 48.8 57.1 59.0 58.0 58.0 
-         29.4 33.0 33.6 36.7 36.0 39.5 39.4 37.7 41.1 49.0 55.3 55.9 57.4 59.4 60.0 60.0 
-         35.2 34.2 35.1 35.0 36.6 41.5 41.4 39.9 42.8 49.8 57.2 57.7 60.0 61.3 62.1 62.3 
-         41.1 37.2 36.8 36.6 40.3 43.1 44.8 41.6 45.2 53.2 62.9 61.2 62.6 64.2 64.9 65.2 
-         46.7 49.0 44.1 44.1 44.0 45.1 45.1 43.2 48.1 54.1 60.4 62.4 66.6 67.6 68.3 68.6 
-         39.9 49.0 46.0 44.4 44.2 46.2 47.5 45.8 50.9 55.1 64.7 71.7 70.5 71.4 72.2 72.5 
-         37.6 45.7 46.0 43.9 46.3 48.8 49.6 47.9 51.7 55.9 68.9 73.9 74.0 75.0 76.1 76.7 
-         49.2 49.9 50.1 48.1 50.5 50.4 50.5 50.6 52.4 60.5 68.1 73.3 75.7 78.3 80.1 81.0 
-         56.4 54.5 52.2 48.2 50.0 51.4 51.8 51.3 53.1 59.7 66.5 70.5 77.5 81.2 83.8 85.2 
-         52.9 56.1 54.2 50.8 51.9 54.8 55.3 52.2 54.6 61.2 68.1 75.3 79.5 84.1 87.3 89.0 
-         58.3 60.3 58.4 53.4 51.8 57.2 55.6 53.6 56.3 63.6 71.2 76.3 81.6 86.7 90.4 92.5 
-         59.0 61.0 57.6 49.4 51.2 57.9 57.4 55.1 57.0 67.4 71.6 75.8 83.5 89.0 93.2 95.4 
-         65.0 64.9 62.4 58.2 54.8 57.1 57.6 56.8 59.8 67.6 73.7 80.3 84.4 90.9 95.6 98.0 
-         67.2 68.0 64.4 61.5 58.3 60.9 64.4 65.4 65.8 71.7 75.8 74.9 85.2 92.4 97.7 100.4 
-         68.7 69.1 65.4 60.4 62.0 67.9 66.2 67.3 69.7 76.2 75.6 75.3 86.0 93.9 99.5 102.5 
+         20.5 23.3 29.0 34.5 31.1 33.2 31.0 29.0 28.4 32.2 35.8 43.1 53.6 55.5 54.5 54.5 
+         24.0 26.8 32.5 38.4 33.2 34.4 34.7 32.8 36.7 39.4 40.9 48.8 57.1 59.0 58.0 58.0 
+         29.4 33.0 34.8 34.4 32.6 39.5 38.2 35.0 41.1 49.0 54.2 54.6 57.4 59.4 60.0 60.0 
+         35.2 34.2 35.1 34.2 34.2 40.0 41.4 37.3 42.8 49.8 56.0 57.7 60.0 61.3 62.1 62.3 
+         41.1 36.2 36.8 36.6 38.2 40.9 43.3 40.5 45.2 53.2 60.5 61.2 62.6 64.2 64.9 65.2 
+         46.7 46.6 43.0 42.9 41.6 45.1 47.1 43.2 47.0 54.1 58.8 62.4 66.6 67.6 68.3 68.6 
+         39.9 49.0 44.9 44.4 43.2 46.6 48.4 46.9 50.9 55.1 63.4 71.7 70.5 71.4 72.2 72.5 
+         37.6 45.7 46.0 45.5 45.3 49.8 51.5 49.1 51.7 55.9 67.8 72.8 74.0 75.0 76.1 76.7 
+         49.2 49.9 50.1 49.4 49.1 49.8 50.5 50.6 52.4 60.5 68.1 73.3 75.7 78.3 80.1 81.0 
+         56.4 54.5 53.4 49.8 47.9 51.2 52.8 51.3 53.1 59.7 65.3 70.5 77.5 81.2 83.8 85.2 
+         52.9 56.1 55.5 52.4 51.9 53.6 56.7 51.1 54.6 61.2 68.1 75.3 79.5 84.1 87.3 89.0 
+         58.3 60.3 61.6 54.6 51.8 58.4 59.5 53.9 56.3 63.6 70.2 76.3 81.6 86.7 90.4 92.5 
+         59.0 61.0 59.0 50.6 51.2 56.1 60.0 55.1 57.0 67.4 71.6 75.8 83.5 89.0 93.2 95.4 
+         65.0 66.7 59.9 56.1 54.5 61.1 61.2 59.5 59.8 68.6 72.5 80.3 84.4 90.9 95.6 98.0 
+         69.6 74.0 65.0 59.2 57.7 64.4 65.8 68.6 65.8 71.7 74.7 74.9 85.2 92.4 97.7 100.4 
+         69.7 71.2 66.5 60.4 62.0 67.9 67.5 67.3 69.7 76.2 75.6 75.3 86.0 93.9 99.5 102.5 
       </constant>
 <constant cols="16" digits="1" name="veTable2" rows="16" units="%">
          26.0 26.0 29.0 34.0 40.0 46.0 50.0 55.0 58.0 61.0 61.0 60.0 59.0 59.0 58.0 58.0 
